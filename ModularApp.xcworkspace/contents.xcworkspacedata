@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Main/Main.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <Group
+         location = "container:"
+         name = "Common">
+         <FileRef
+            location = "group:Frameworks/StylesResources/StylesResources.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Modules">
+         <FileRef
+            location = "group:Frameworks/Playground/Playground.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/Profile/Profile.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>
