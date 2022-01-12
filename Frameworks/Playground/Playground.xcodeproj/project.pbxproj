@@ -12,6 +12,7 @@
 		353C4482278C7B590041FF27 /* PlaygroundModuleFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C4481278C7B590041FF27 /* PlaygroundModuleFabric.swift */; };
 		353C44BE278C98270041FF27 /* StylesResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C44BD278C98270041FF27 /* StylesResources.framework */; };
 		353C44BF278C98270041FF27 /* StylesResources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 353C44BD278C98270041FF27 /* StylesResources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FFA8834CC5D97996288B5BD /* Pods_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A00076C3912E995FA478A74 /* Pods_Playground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,11 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B61C1A44ACE1533DA631E6A /* Pods-Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.debug.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.debug.xcconfig"; sourceTree = "<group>"; };
 		353C4471278C7AAE0041FF27 /* Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		353C4474278C7AAE0041FF27 /* Playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Playground.h; sourceTree = "<group>"; };
 		353C447F278C7B450041FF27 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
 		353C4481278C7B590041FF27 /* PlaygroundModuleFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundModuleFabric.swift; sourceTree = "<group>"; };
 		353C44BD278C98270041FF27 /* StylesResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StylesResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A00076C3912E995FA478A74 /* Pods_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA3B75CA5F04775927B1F25A /* Pods-Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.release.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				353C44BE278C98270041FF27 /* StylesResources.framework in Frameworks */,
+				5FFA8834CC5D97996288B5BD /* Pods_Playground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 				353C4473278C7AAE0041FF27 /* Playground */,
 				353C4472278C7AAE0041FF27 /* Products */,
 				353C44BC278C98270041FF27 /* Frameworks */,
+				9B036C47FE2730AFEAD3B946 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,8 +118,19 @@
 			isa = PBXGroup;
 			children = (
 				353C44BD278C98270041FF27 /* StylesResources.framework */,
+				3A00076C3912E995FA478A74 /* Pods_Playground.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B036C47FE2730AFEAD3B946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B61C1A44ACE1533DA631E6A /* Pods-Playground.debug.xcconfig */,
+				DA3B75CA5F04775927B1F25A /* Pods-Playground.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +151,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 353C4478278C7AAE0041FF27 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
+				0FF4079B5DC5A6A261EB5A29 /* [CP] Check Pods Manifest.lock */,
 				353C446C278C7AAE0041FF27 /* Headers */,
 				353C446D278C7AAE0041FF27 /* Sources */,
 				353C446E278C7AAE0041FF27 /* Frameworks */,
@@ -191,6 +209,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FF4079B5DC5A6A261EB5A29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Playground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		353C446D278C7AAE0041FF27 /* Sources */ = {
@@ -329,6 +372,7 @@
 		};
 		353C4479278C7AAE0041FF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B61C1A44ACE1533DA631E6A /* Pods-Playground.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -359,6 +403,7 @@
 		};
 		353C447A278C7AAE0041FF27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA3B75CA5F04775927B1F25A /* Pods-Playground.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
