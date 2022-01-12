@@ -37,6 +37,6 @@ public final class PlaygroundViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .systemRed
     }
 }

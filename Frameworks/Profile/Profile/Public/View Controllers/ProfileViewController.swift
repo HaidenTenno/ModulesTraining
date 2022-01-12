@@ -37,6 +37,6 @@ public final class ProfileViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = .systemMint
+        view.backgroundColor = .systemPink
     }
 }
