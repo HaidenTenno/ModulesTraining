@@ -47,14 +47,14 @@ class MainTabBarController: UITabBarController {
         tabBar.barTintColor = .systemIndigo
         tabBar.unselectedItemTintColor = .systemGray5
         
-        if #available(iOS 15.0, *) {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = .systemIndigo
-            
-            tabBar.standardAppearance = appearance
-            tabBar.scrollEdgeAppearance = tabBar.standardAppearance
-        }
+//        if #available(iOS 15.0, *) {
+//            let appearance = UITabBarAppearance()
+//            appearance.configureWithOpaqueBackground()
+//            appearance.backgroundColor = .systemIndigo
+//            
+//            tabBar.standardAppearance = appearance
+//            tabBar.scrollEdgeAppearance = tabBar.standardAppearance
+//        }
     }
     
     private func setupControllers() {
