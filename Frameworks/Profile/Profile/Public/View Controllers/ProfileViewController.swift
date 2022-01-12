@@ -5,7 +5,6 @@
 //  Created by Петр Тартынских  on 10.01.2022.
 //
 
-import Alamofire
 import StylesResources
 import UIKit
 
@@ -29,21 +28,12 @@ public final class ProfileViewController: UIViewController {
         setupUI()
     }
     
-    public override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let request = AF.request("https://swapi.dev/api/films")
-        request.responseJSON { (data) in
-            print(data)
-        }
-    }
-    
     // MARK: - Private Methods
     
     private func setupTabBar() {
         tabBarItem = UITabBarItem(title: "Профиль",
                                   image: Assets.person,
-                                  selectedImage: Assets.person)
+                                  selectedImage: UIImage(systemName: "person.crop.circle"))
     }
     
     private func setupUI() {
