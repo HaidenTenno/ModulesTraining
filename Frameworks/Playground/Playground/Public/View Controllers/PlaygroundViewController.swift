@@ -33,7 +33,7 @@ public final class PlaygroundViewController: UIViewController {
     private func setupTabBar() {
         tabBarItem = UITabBarItem(title: "Игра",
                                   image: Assets.controller,
-                                  selectedImage: UIImage(systemName: "gamecontroller"))
+                                  selectedImage: Assets.controller)
     }
     
     private func setupUI() {

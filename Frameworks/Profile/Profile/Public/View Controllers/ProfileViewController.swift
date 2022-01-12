@@ -33,7 +33,7 @@ public final class ProfileViewController: UIViewController {
     private func setupTabBar() {
         tabBarItem = UITabBarItem(title: "Профиль",
                                   image: Assets.person,
-                                  selectedImage: UIImage(systemName: "person.crop.circle"))
+                                  selectedImage: Assets.person)
     }
     
     private func setupUI() {
