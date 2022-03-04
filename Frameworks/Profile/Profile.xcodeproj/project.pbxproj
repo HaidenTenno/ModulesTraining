@@ -12,6 +12,8 @@
 		353C4463278C75070041FF27 /* ProfileModuleFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353C4462278C75070041FF27 /* ProfileModuleFabric.swift */; };
 		353C44C3278C98300041FF27 /* StylesResources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C44C2278C98300041FF27 /* StylesResources.framework */; };
 		353C44C4278C98300041FF27 /* StylesResources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 353C44C2278C98300041FF27 /* StylesResources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3551932A27D2148600E17D8C /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3551932927D2148600E17D8C /* UIComponents.framework */; };
+		3551932B27D2148600E17D8C /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3551932927D2148600E17D8C /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,6 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3551932B27D2148600E17D8C /* UIComponents.framework in Embed Frameworks */,
 				353C44C4278C98300041FF27 /* StylesResources.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -34,6 +37,7 @@
 		353C445F278C74790041FF27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		353C4462278C75070041FF27 /* ProfileModuleFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModuleFabric.swift; sourceTree = "<group>"; };
 		353C44C2278C98300041FF27 /* StylesResources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StylesResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551932927D2148600E17D8C /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3551932A27D2148600E17D8C /* UIComponents.framework in Frameworks */,
 				353C44C3278C98300041FF27 /* StylesResources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +116,7 @@
 		353C44C1278C98300041FF27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3551932927D2148600E17D8C /* UIComponents.framework */,
 				353C44C2278C98300041FF27 /* StylesResources.framework */,
 			);
 			name = Frameworks;

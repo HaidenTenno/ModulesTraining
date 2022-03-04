@@ -11,6 +11,9 @@
          location = "container:"
          name = "Common">
          <FileRef
+            location = "group:Frameworks/UIComponents/UIComponents.xcodeproj">
+         </FileRef>
+         <FileRef
             location = "group:Frameworks/StylesResources/StylesResources.xcodeproj">
          </FileRef>
       </Group>

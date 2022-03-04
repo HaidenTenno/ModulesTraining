@@ -6,6 +6,7 @@
 //
 
 import StylesResources
+import UIComponents
 import UIKit
 
 public final class PlaygroundViewController: UIViewController {
@@ -38,5 +39,13 @@ public final class PlaygroundViewController: UIViewController {
     
     private func setupUI() {
         view.backgroundColor = .systemRed
+        
+        let likeView = LikeView(size: 50)
+        view.addSubview(likeView)
+
+        NSLayoutConstraint.activate([
+            likeView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            likeView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
 }
